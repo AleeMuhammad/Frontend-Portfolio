@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// Import skill images
 import htmlImg from '../assets/html.png';
 import cssImg from '../assets/css.png';
 import jsImg from '../assets/javascript.png';
@@ -23,7 +22,6 @@ const MySkills = () => {
     { name: 'Framer Motion', img: motionImg },
   ];
 
-  // Duplicate the skills array for seamless infinite scroll
   const duplicatedSkills = [...skills, ...skills];
 
   return (
@@ -44,13 +42,10 @@ const MySkills = () => {
           </p>
         </motion.div>
 
-        {/* Infinite Scroll Container */}
         <div className="relative">
-          {/* Gradient Overlays */}
           <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r  z-10 pointer-events-none"></div>
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l  z-10 pointer-events-none"></div>
 
-          {/* Scrolling Container */}
           <div className="overflow-hidden">
             <motion.div
               className="flex gap-8 md:gap-12 mt-2"
