@@ -23,12 +23,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-6 py-4 md:px-12 md:py-5 bg-black/60 opacity-80 backdrop-blur-sm border-b border-white/5">
-      <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('#')}>
+    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-4 py-4 md:px-12 md:py-5 bg-black/60 opacity-80 backdrop-blur-sm border-b border-white/5">
+      <div className="flex items-center gap-2 cursor-pointer flex-shrink-0" onClick={() => scrollToSection('#')}>
         <div className="w-9 h-9 bg-gray-200 rounded-full flex items-center justify-center text-black font-bold text-xl">
             AM
         </div>
-        <span className="text-xl font-bold text-white">Ali Muhammad</span>
+        <span className="text-lg md:text-xl font-bold text-white whitespace-nowrap">Ali Muhammad</span>
       </div>
       <div className="hidden md:flex gap-8 items-center">
         {navLinks.map((link) => (
@@ -44,14 +44,14 @@ const Navbar = () => {
         ))}
       </div>
 
-      <div className="md:hidden text-white z-50 relative" onClick={toggleMenu}>
+      <div className="md:hidden text-white z-50 relative flex-shrink-0" onClick={toggleMenu}>
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </div>
 
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="hidden md:block bg-linear-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-full font-medium"
+        className="hidden md:block bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-full font-medium"
       >
        <a href="#contact">Reach Out</a>
       </motion.button>
@@ -63,9 +63,9 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: 'tween', duration: 0.3 }}
-            className="fixed inset-0 bg-black/95 backdrop-blur-lg z-40 flex flex-col items-center justify-center md:hidden"
+            className="fixed top-58  inset-0 bg-black  z-40 flex flex-col items-center justify-center md:hidden"
           >
-            <div className="flex flex-col gap-8 text-center">
+            <div className="flex flex-col gap-8 w-full grid place-items-center bg-black text-center">
               {navLinks.map((link, index) => (
                 <motion.a
                   key={link.name}
@@ -83,9 +83,9 @@ const Navbar = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="bg-linear-to-r from-pink-500 to-purple-600 text-white px-8 py-3 rounded-full font-medium mt-4"
+                className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-3 rounded-full font-medium mt-4 mb-3 "
               >
-                Reach Out
+                <a href="#contact">Reach Out</a>
               </motion.button>
             </div>
           </motion.div>
