@@ -64,7 +64,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: 'tween', duration: 0.3 }}
-            className="fixed top-58  inset-0 bg-black  z-40 flex flex-col items-center justify-center md:hidden"
+            className="fixed top-66  inset-0 bg-black  z-40 flex flex-col items-center justify-center md:hidden"
           >
             <div className="flex flex-col gap-8 w-full grid place-items-center bg-black text-center">
               {navLinks.map((link, index) => (
@@ -86,7 +86,7 @@ const Navbar = () => {
                 transition={{ delay: 0.4 }}
                 className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-3 rounded-full font-medium mt-4 mb-3 "
               >
-                <a href="#contact">Reach Out</a>
+                <a href="#contact" onClick={toggleMenu} >Reach Out</a>
               </motion.button>
             </div>
           </motion.div>

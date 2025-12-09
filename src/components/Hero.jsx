@@ -8,7 +8,7 @@ import cv from "../assets/Ali Muhammad CV.pdf"
 const Hero = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center mt-6 justify-between px-6 md:px-12 py-12 md:py-20 relative z-10">
-      <div className="w-full md:w-1/2 text-white space-y-6">
+      <div className="w-full md:w-1/2 text-white space-y-6 mt-6 md:mt-0">
         <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

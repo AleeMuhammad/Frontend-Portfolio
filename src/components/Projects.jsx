@@ -68,7 +68,7 @@ const Projects = () => {
                   alt={project.title} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity hidden md:flex items-center justify-center gap-4">
                   <a href={project.demoLink} target='_blank' className="p-2 bg-white rounded-full text-black hover:bg-teal-400 transition-colors">
                     <ExternalLink size={20} />
                   </a>
@@ -81,12 +81,20 @@ const Projects = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
                 <p className="text-gray-400 text-sm mb-4 line-clamp-3">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, i) => (
                     <span key={i} className="text-xs bg-gray-800 text-teal-400 px-3 py-1 rounded-full">
                       {tech}
                     </span>
                   ))}
+                </div>
+                <div className="flex md:hidden gap-4">
+                  <a href={project.demoLink} target='_blank' className="flex items-center gap-2 text-sm text-white hover:text-teal-400 transition-colors">
+                    <ExternalLink size={16} /> Live Demo
+                  </a>
+                  <a href={project.codeLink} target='_blank' className="flex items-center gap-2 text-sm text-white hover:text-teal-400 transition-colors">
+                    <Github size={16} /> View Code
+                  </a>
                 </div>
               </div>
             </motion.div>
