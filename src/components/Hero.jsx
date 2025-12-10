@@ -50,7 +50,7 @@ I turn ideas into clean, responsive, and user-friendly front-end websites and ap
           <a href='#projects' className="bg-linear-to-r  from-teal-400 to-blue-500 text-black font-bold px-8 py-3 rounded-full shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40 transition-shadow">
             View Projects
           </a>
-          <a href={cv} download="Ali_Muhammad_Resume.pdf" className="bg-white text-black font-bold px-8 py-3 rounded-full hover:bg-gray-200 transition-colors">
+          <a href={cv} download="Ali-Muhammad-Resume.pdf" className="bg-white text-black font-bold px-8 py-3 rounded-full hover:bg-gray-200 transition-colors">
             My Resume
           </a>
         </motion.div>
