@@ -39,7 +39,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-gray-400 max-w-lg text-lg"
         >
-I turn ideas into clean, responsive, and user-friendly front-end websites and applications.        </motion.p>
+I’m Ali Muhammad, a Front-end Developer who builds clean, responsive, and user-friendly websites and web applications using modern web technologies.  </motion.p>
         
         <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -50,7 +50,7 @@ I turn ideas into clean, responsive, and user-friendly front-end websites and ap
           <a href='#projects' className="bg-linear-to-r  from-teal-400 to-blue-500 text-black font-bold px-8 py-3 rounded-full shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40 transition-shadow">
             View Projects
           </a>
-          <a href={cv} download="Ali-Muhammad-Resume.pdf" className="bg-white text-black font-bold px-8 py-3 rounded-full hover:bg-gray-200 transition-colors">
+          <a href={cv} download="AliMuhammad - Resume.pdf" className="bg-white text-black font-bold px-8 py-3 rounded-full hover:bg-gray-200 transition-colors">
             My Resume
           </a>
         </motion.div>
@@ -64,7 +64,7 @@ I turn ideas into clean, responsive, and user-friendly front-end websites and ap
           <a href="https://www.instagram.com/alimuhammad_lalani/" target="_blank" rel="noopener noreferrer">
             <Instagram  className="cursor-pointer hover:text-teal-400 transition-colors" />
           </a>
-          <a href="https://www.linkedin.com/in/alimuhammad-lalani/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/ali-muhammad12/" target="_blank" rel="noopener noreferrer">
             <Linkedin className="cursor-pointer hover:text-teal-400 transition-colors" />
           </a>
           <a href="https://github.com/AleeMuhammad" target="_blank" rel="noopener noreferrer">

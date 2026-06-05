@@ -6,7 +6,7 @@ const About = () => {
   const experiences = [
     {
       id: 1,
-      role: 'Web Developer (Part-Time)',
+      role: 'Associate Front-end Developer',
       company: 'Andev Matrix',
       period: 'June 2025 - Present',
       description: 'Built the complete company website and contributed to projects such as e-commerce systems and food delivery websites using Next.js, React, and Tailwind CSS. Managed multiple tasks independently, consistently delivering high-quality features within deadlines and improving overall development proficiency.',
@@ -16,7 +16,7 @@ const About = () => {
       id: 2,
       role: 'Web Developer Intern',
       company: 'ZetSol Technologies',
-      period: 'Jan 2025 - March 2025',
+      period: '20th, Jan 2025 - 20th, April 2025',
       description: 'Contributed to BC Appa, an app for fund organization, by fixing UI issues, developing reusable components, and adding new features. Building scalable and reusable UI components using React.js and Next.js. Enhancing web performance and SEO through SSR and static site generation.',
       icon: <Code size={20} />,
     },
