@@ -9,7 +9,7 @@ const About = () => {
       role: 'Associate Front-end Developer',
       company: 'Andev Matrix',
       period: 'June 2025 - Present',
-      description: 'Built the complete company website and contributed to projects such as e-commerce systems and food delivery websites using Next.js, React, and Tailwind CSS. Managed multiple tasks independently, consistently delivering high-quality features within deadlines and improving overall development proficiency.',
+      description: 'Developed the official company website using Next.js and Tailwind CSS, showcasing services, offerings, and hiring opportunities.Integrated Sanity CMS Integrated Sanity CMS for dynamic blog management and optimized performance, SEO, and responsiveness using SSR and static generation. Developed a full-stack e-commerce web application with features like product browsing, shopping cart, and responsive UI using modern web technologies. Upgraded multiple React Js projects to the latest versions, improving performance and code maintainability.',
       icon: <Briefcase size={20} />,
     },
     {
