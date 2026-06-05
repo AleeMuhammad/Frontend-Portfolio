@@ -14,7 +14,7 @@ const About = () => {
     },
     {
       id: 2,
-      role: 'Web Developer Intern',
+      role: 'Front-end Developer Intern',
       company: 'ZetSol Technologies',
       period: '20th, Jan 2025 - 20th, April 2025',
       description: 'Contributed to BC Appa, an app for fund organization, by fixing UI issues, developing reusable components, and adding new features. Building scalable and reusable UI components using React.js and Next.js. Enhancing web performance and SEO through SSR and static site generation.',
