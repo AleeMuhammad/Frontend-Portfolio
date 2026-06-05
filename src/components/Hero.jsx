@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Github, Instagram, Linkedin } from 'lucide-react';
 import Typewriter from 'typewriter-effect';
 import img from "../assets/avator.png"
-import cv from "../assets/Ali Muhammad CV.pdf"
+import cv from "../assets/AliMuhammad - Resume.pdf"
 
 const Hero = () => {
   return (
